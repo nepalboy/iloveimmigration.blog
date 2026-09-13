@@ -21,7 +21,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 /* HERO */
 .hero{background:radial-gradient(1200px 500px at 20% -10%,#4c1d95 0%,transparent 60%),radial-gradient(900px 420px at 90% 10%,#0ea5e9 0%,transparent 55%),linear-gradient(135deg,#1e1b4b 0%,#312e81 55%,#1e1b4b 100%);color:#fff;padding:4rem 1.25rem 3.5rem;position:relative;overflow:hidden}
 .hero-inner{max-width:1140px;margin:0 auto;position:relative}
-.eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1e1b4b;background:var(--amber-lt);border-radius:999px;padding:.3rem .9rem;margin-bottom:1.1rem}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1e1b4b;background:var(--amber-lt);border-radius:999px;padding:.3rem .9rem}
+.hero-top{display:flex;align-items:center;gap:.9rem;margin-bottom:1.2rem}
+.hero-avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(251,191,36,.55)}
 .hero h1{font-size:clamp(1.9rem,4.5vw,3rem);line-height:1.15;font-weight:800;max-width:720px;letter-spacing:-.01em}
 .hero h1 .accent{background:linear-gradient(90deg,var(--amber-lt),#f97316);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p.sub{color:#c7d2fe;font-size:1.02rem;max-width:620px;margin-top:1rem}
@@ -92,7 +94,10 @@ footer a:hover{color:var(--amber-lt)}
 
 <div class="hero">
   <div class="hero-inner">
-    <span class="eyebrow">✦ Curated by Everest Muse</span>
+    <div class="hero-top">
+      <img class="hero-avatar" src="avatar.jpg" alt="Everest Muse" />
+      <span class="eyebrow">✦ Curated by Everest Muse</span>
+    </div>
     <h1>Everest Muse brings you the world of <span class="accent">legal immigration</span>.</h1>
     <p class="sub">US and international news on legal migration pathways and educational visas — green cards, work visas, and student rules, tracked as they change.</p>
     <div class="cta-row">
