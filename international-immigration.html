@@ -12,9 +12,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 .hero h1{font-size:1.7rem;margin-bottom:.3rem}
 .hero h1 .accent{color:#fbbf24}
 .hero p{color:#c7d2fe;font-size:.92rem;max-width:640px;margin:0 auto}
-.nav{background:#1e1b4b;padding:.6rem 1rem;text-align:center;position:sticky;top:0;z-index:10}
-.nav a{color:#c7d2fe;text-decoration:none;margin:0 .9rem;font-size:.9rem;font-weight:600}
-.nav a:hover{color:#fbbf24}
+.nav{background:rgba(30,27,75,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:0;position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(251,191,36,.25)}
+.nav-inner{max-width:900px;margin:0 auto;padding:.7rem 1.25rem;display:flex;align-items:center;justify-content:space-between}
+.brand{color:#fff;font-weight:800;font-size:.95rem;text-decoration:none}
+.brand span{color:#fbbf24}
+.nav-links a{color:#c7d2fe;text-decoration:none;margin-left:1.2rem;font-size:.85rem;font-weight:600}
+.nav-links a:hover{color:#fbbf24}
+.eyebrow{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1e1b4b;background:#fbbf24;border-radius:999px;padding:.28rem .85rem;margin-bottom:.9rem}
 .wrap{max-width:900px;margin:0 auto;padding:1.5rem 1.25rem}
 .section{background:#fff;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:4px solid #f59e0b}
 .section h2{font-size:1.25rem;color:#1e1b4b;margin-bottom:1rem}
@@ -37,13 +41,19 @@ footer a{color:#c7d2fe}
 </head>
 <body>
 <div class="hero">
+  <span class="eyebrow">✦ Curated by Everest Muse</span>
   <h1>🌍 International <span class="accent">Immigration</span> News</h1>
   <p>Legal migration programs and educational visas around the world — EU, UK, Canada, Australia and beyond.</p>
 </div>
 <div class="nav">
-  <a href="index.html">Home</a>
-  <a href="us-immigration.html">🇺🇸 US Immigration</a>
-  <a href="international-immigration.html">🌍 International</a>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">🛂 I Love <span>Immigration</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="us-immigration.html">🇺🇸 US</a>
+      <a href="international-immigration.html">🌍 International</a>
+    </div>
+  </div>
 </div>
 
 <div class="wrap">
